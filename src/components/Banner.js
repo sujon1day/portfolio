@@ -7,7 +7,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Banner = () => {
     return (
-        <div id='home' className='flex items center p-5'>
+        <div id='home' className='flex p-5 flex-col lg:flex-row'>
             <div className='basis-3/6 text-slate-300 p-1 flex flex-col justify-center items-start'>
                 <p className='text-base	pb-3.5'>WELCOME TO MY WORLD</p>
                 <h2 className='text-6xl pb-3.5 font-semibold text-slate-100'>Hi, I’m <span className='text-red-600	'>Sujon</span></h2>
