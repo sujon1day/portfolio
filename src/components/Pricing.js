@@ -5,6 +5,7 @@ import Premium from './Premium';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 const Pricing = (props) => {
+    const {pricingData} = props;
     
     return (
 
@@ -24,9 +25,9 @@ const Pricing = (props) => {
                     </ul>
 
                     <Routes>
-                        <Route path="/" element={<Basic prc={props.pricingData} />} />
-                        <Route path="/pricing/standard" element={<Standard prc={props.pricingData} />} />
-                        <Route path="/pricing/premium" element={<Premium prc={props.pricingData} />} />
+                        <Route path="/" element={<Basic priceTableDetails={pricingData} />} />
+                        <Route path="/pricing/standard" element={<Standard priceTableDetails={pricingData} />} />
+                        <Route path="/pricing/premium" element={<Premium priceTableDetails={pricingData} />} />
                     </Routes>
 
                 </BrowserRouter>
