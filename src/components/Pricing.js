@@ -1,12 +1,11 @@
 import React from 'react';
-import pricing from '../data/pricing'
 import Basic from './Basic';
 import Standard from './Standard';
 import Premium from './Premium';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
-const Pricing = () => {
-    console.log(pricing)
+const Pricing = (props) => {
+    
     return (
 
         <div className='text-slate-300 flex p-5'>
@@ -25,9 +24,9 @@ const Pricing = () => {
                     </ul>
 
                     <Routes>
-                        <Route path="/" element={<Basic prc={pricing} />} />
-                        <Route path="/pricing/standard" element={<Standard prc={pricing} />} />
-                        <Route path="/pricing/premium" element={<Premium prc={pricing} />} />
+                        <Route path="/" element={<Basic prc={props.pricingData} />} />
+                        <Route path="/pricing/standard" element={<Standard prc={props.pricingData} />} />
+                        <Route path="/pricing/premium" element={<Premium prc={props.pricingData} />} />
                     </Routes>
 
                 </BrowserRouter>
