@@ -18,7 +18,7 @@ const Pricing = (props) => {
                 <BrowserRouter>
 
                     <ul className='text-slate-100 flex justify-around mb-12'>
-                        <li><Link to="/">Basic</Link></li>
+                        <li><Link activeClassName="text-red-600" to="/">Basic</Link></li>
                         <li><Link to="/pricing/standard">Standard</Link></li>
                         <li><Link to="/pricing/premium">Premium</Link></li>
                     </ul>

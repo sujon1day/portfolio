@@ -16,9 +16,8 @@ function App() {
     <div className='bg-black'>
 
       <Navbar />
-      
       <Banner />
-
+      
       <Features servicesData={services}/>
       <Portfolio projectsData={projects}/>
       <Pricing pricingData={pricing}/>
